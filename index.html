@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA Practice</title>
+    <!-- Icon links -->
+    <link rel="stylesheet" href="icon/css/all.min.css">
+    <!--css links-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+    <div class="container mb-400">
+        <h1 class="text-success">01. Click the button to change the text</h1>
+        <button type="button" class="btn btn-primary" onclick="textChange()">Text Change</button>
+        <h2 id="h2">Lorem ipsum dolor, sit amet.</h2>
+
+        <hr>
+
+        <h1 class="text-danger">02. Click the button to show the date</h1>
+        <button type="button" class="btn btn-dark" onclick="showDate()">Show Date</button>
+        <h2 id="d_h2">Date</h2>
+
+        <hr>
+
+        <h1 class="text-danger">03. Click the button to On/Off the Bulb</h1>
+        <button onclick="bulbOn()" type="button" class="btn btn-success">Bulb On</button>
+        <button onclick="bulbOff()" type="button" class="btn btn-danger">Bulb Off</button>
+
+        <img id="img" src="images/off.gif" alt="">
+
+        <hr>
+
+        <h1 class="text-danger">04. Click the button to change font size</h1>
+        <button onclick="fontChange()" type="button" class="btn btn-dark">Font Change</button>
+        <h2 id="f_h2">Lorem ipsum dolor sit amet.</h2>
+
+        <hr>
+
+        <h1 class="text-danger">
+            05. Click the button to change font color</h1>
+        <button onclick="colorChange()" type="button" class="btn btn-dark">Font Change</button>
+        <h2 id="col_h2">Lorem ipsum dolor sit amet.</h2>
+
+        <hr>
+
+        <h1>06. Click the button to show/hide the text</h1>
+        <button onclick="show()" type="button" class="btn btn-dark">Show</button>
+        <button onclick="hide()" type="button" class="btn btn-dark">Hide</button>
+        <h2 id="c_h2">Lorem ipsum dolor sit, amet.</h2>
+
+        <hr>
+
+        <h1 class="text-success">07. Click the button to show the text with document.write</h1>
+        <button onclick="writeOutput()" type="button" class="btn btn-dark">D_Write</button>
+
+        <hr>
+
+        <h1 class="text-primary">08. Click the button to show the text with window.alert</h1>
+        <button onclick="windowAlert()" type="button" class="btn btn-dark">W_Alert</button>
+
+        <hr>
+
+        <h1>09. Click the button to show the text with console.log</h1>
+        <button onclick="cLog()" type="button" class="btn btn-dark">clog</button>
+
+        <hr>
+
+        <h1>10. Click the button to show the variable output</h1>
+        <button onclick="vOutput()" type="button" class="btn btn-dark">variable output</button>
+        <h2 id="v_h2"></h2>
+        <h2 id="vr_h2"></h2>
+
+        <hr>
+
+        <h1>11. Click the button to print the current page.</h1>
+        <button onclick="windowPrint()" type="button" class="btn btn-dark">Print This page</button>
+
+        <hr>
+
+        <h1>12. Click the button to show the variable output</h1>
+        <button onclick="letOutput()" type="button" class="btn btn-dark">Let Output</button>
+        <h2 id="let_h2"></h2>
+
+        <hr>
+
+        <h1>13. Click the button to show the variable output</h1>
+        <button onclick="letOutput1()" type="button" class="btn btn-dark">Let Output1</button>
+        <h2 id="let1_h2"></h2>
+
+        <hr>
+
+        <h1>14. Click the button to show the const output</h1>
+        <button onclick="constOutput()" type="button" class="btn btn-dark">Const Output</button>
+        <h2 id="con_h2"></h2>
+
+        <hr>
+
+        <h1>15. Click the button to show the operator output1</h1>
+        <button onclick="operator()" type="button" class="btn btn-dark">Operator1</button>
+        <h2 id="op_h2"></h2>
+
+        <hr>
+
+        <h1>16. Click the button to show the operator output2</h1>
+        <button onclick="operator2()" type="button" class="btn btn-dark">Operator2</button>
+        <h2 id="op2_h2"></h2>
+
+        <hr>
+
+        <h1 class="text-success">17. Click the button to show the String operator output</h1>
+        <button onclick="operator3()" type="button" class="btn btn-dark">Operator3</button>
+        <h2 id="op3_h2"></h2>
+
+        <hr>
+
+        <h1 class="text-success">18. Click the button to show the Increment operator output</h1>
+        <button onclick="increment()" type="button" class="btn btn-dark">Operator4</button>
+        <h2 id="op4_h2"></h2>
+
+        <hr>
+
+        <h1 class="text-success">19. Click the button to show the Math.pow output</h1>
+        <button onclick="mathPow()" type="button" class="btn btn-dark">Operator5</button>
+        <h2 id="op5_h2"></h2>
+
+        <hr>
+
+        <h1 class="text-success">20. Click the button to show the left shift assignment</h1>
+        <button onmouseover="leftAssignment()" type="button" class="btn btn-primary">Left Assignment</button>
+        <h2 id="left_h2"></h2>
+
+        <hr>
+
+        <h1 class="text-success">21. Click the button to show the right shift assignment</h1>
+        <button onmouseover="rightAssignment()" type="button" class="btn btn-primary">Right Assignment</button>
+        <h2 id="right_h2"></h2>
+
+        <hr>
+
+        <h1 class="text-success">22. Click the button to show the Bitwise AND Assignment</h1>
+        <button onmouseover="bitwiseAssignment()" type="button" class="btn btn-success">Bitwise Assignment</button>
+        <h2 id="bit_h2"></h2>
+
+        <hr>
+
+        <h1 class="text-primary">23. Click the button to show the Logical AND Assignment</h1>
+        <button onclick="logicalAssignment()" type="button" class="btn btn-success">Logical AND Assignment</button>
+        <h2 id="log_h2"></h2>
+
+        <hr>
+
+        <h1 class="text-success">24. Click the button to show the Bitwise OR Assignment</h1>
+        <button onclick="bitwiseorAssignment()" type="button" class="btn btn-success">Bitwise OR Assignment</button>
+        <h2 id="bitor_h2"></h2>
+
+        <hr>
+
+        <h1 class="text-primary">25. Click the button to show the Logical OR Assignment</h1>
+        <button onclick="logicalorAssignment()" type="button" class="btn btn-dark">Logical OR Assignment</button>
+        <h2 id="logor_h2"></h2>
+
+        <hr>
+
+        <h1 class="text-primary">26. Click the button to show the Nullish Coalescing Assignment</h1>
+        <button onclick="nullishAssignment()" type="button" class="btn btn-dark">Nullish Assignment</button>
+        <h2 id="null_h2"></h2>
+
+        <hr>
+
+        <h1 class="text-primary">27. Click the button to show the function that converts from Fahrenheit to Celsius</h1>
+        <button onclick="toCelsius()" type="button" class="btn btn-dark">Celsius</button>
+        <h2 id="cel_h2"></h2>
+
+        <hr>
+
+        <h1 class="text">28. Click the button to show the objects output</h1>
+        <button onclick="objects()" type="button" class="btn btn-dark">Objects</button>
+        <h2 id="ob_h2"></h2>
+
+        <hr>
+
+        <h1 class="text">29. Click the button to show the Strings Method</h1>
+        <button onclick="stringMethod()" type="button" class="btn btn-dark">String Method</button>
+        <h2 id="sm_h2"></h2>
+
+        <hr>
+
+        <h1 class="text-danger">30. Click the button to show the Strings Search</h1>
+        <button onclick="stringSearch()" type="button" class="btn btn-dark">String Search</button>
+        <h2 id="ss_h2"></h2>
+
+        <hr>
+
+        <h1 class="text-danger">31. Click the button to show the Floating Point Precision</h1>
+        <button onclick="pointPrecision()" type="button" class="btn btn-dark">Point Precision</button>
+        <h2 id="pp_h2"></h2>
+
+        <hr>
+
+        <h1 class="text-primary">32. Click the button to show the not a number</h1>
+        <button onclick="notNumber()" type="button" class="btn btn-dark">Not A Number</button>
+        <h2 id="nan_h2"></h2>
+
+        <hr>
+
+        <h1 class="text-primary">33. Click the button to show the type of nan</h1>
+        <button onclick="typeNan()" type="button" class="btn btn-dark">Type Of Nan</button>
+        <h2 id="nan1_h2"></h2>
+
+        <hr>
+
+        <h1 class="text">34. Click the button to show the Infinity Number</h1>
+        <button onclick="infinity()" type="button" class="btn btn-dark">Infinity</button>
+        <h2 id="in_h2"></h2>
+
+        <hr>
+
+        <h1 class="text">35. Click the button to show the Numeric constants, preceded by 0x, are interpreted as hexadecimal</h1>
+        <button onclick="hexadecimal()" type="button" class="btn btn-dark">Hexadecimal</button>
+        <h2 id="h_h2"></h2>
+
+        <hr>
+
+        <h1 class="text">36. Click the button to show the expotential method</h1>
+        <button onclick="expoMethod()" type="button" class="btn btn-dark">Expotential</button>
+        <h2 id="ex_h2"></h2>
+
+        <hr>
+
+        <h1 class="text">37. Click the button to show the toFixed method</h1>
+        <button onclick="fixedMethod()" type="button" class="btn btn-dark">Fixed</button>
+        <h2 id="fx_h2"></h2>
+
+        <hr>
+
+        <h1 class="text">38. Click the button to show the EPSILON Property</h1>
+        <button onclick="epsilon()" type="button" class="btn btn-dark">Epsilon</button>
+        <h2 id="ep_h2"></h2>
+
+        <hr>
+
+        <h1 class="text">39. Click the button to show the Max_Value Property</h1>
+        <button onclick="maxValue()" type="button" class="btn btn-dark">Max Value</button>
+        <h2 id="max_h2"></h2>
+
+        <hr>
+
+        <h1 class="text-danger">40. Click the button to show the x.Max_Value Property</h1>
+        <button onclick="xmaxValue()" type="button" class="btn btn-dark">xMax Value</button>
+        <h2 id="xmax_h2"></h2>
+
+        <hr>
+
+        <h1 class="text-danger">41. Click the button to show the MIN_SAFE_INTEGER Property</h1>
+        <button onclick="minSafe()" type="button" class="btn btn-primary">Min Safe</button>
+        <h2 id="min_h2"></h2>
+
+        <hr>
+
+        <h1 class="text-danger">42. Click the button to show the POSITIVE_INFINITY Property</h1>
+        <button onclick="posInfinity()" type="button" class="btn btn-success">Positive</button>
+        <h2 id="pos_h2"></h2>
+
+        <hr>
+
+        <h1 class="text-info">43. Click the button to show the FOr Each Method</h1>
+        <button onclick="eachMethod()" type="button" class="btn btn-success">For Each</button>
+        <h2 id="each_h2"></h2>
+
+        <hr>
+
+        <h1 class="text">44. Click the button to show the new Date</h1>
+        <button onclick="newDate()" type="button" class="btn btn-dark">new date</button>
+        <h2 id="date_h2"></h2>
+
+        <hr>
+
+        <h1 class="text">45. Click the button to show the ceil math</h1>
+        <button onclick="mathCeil()" type="button" class="btn btn-dark">Math Ceil</button>
+        <h2 id="ceil_h2"></h2>
+
+        <hr>
+
+        <h1 class="text-danger">46. Click the button to show the math trunc</h1>
+        <button onclick="mathTrunc()" type="button" class="btn btn-dark">Math Trunc</button>
+        <h2 id="trunc_h2"></h2>
+
+        <hr>
+
+        <h1 class="text-success">47. Click the button to show the math sign</h1>
+        <button onclick="mathsign()" type="button" class="btn btn-dark">Math Sign</button>
+        <h2 id="sign_h2"></h2>
+
+        <hr>
+
+        <h1 class="text-primary">48. Click the button to show the math Pow</h1>
+        <button onclick="mathPow()" type="button" class="btn btn-dark">Math Pow</button>
+        <h2 id="pow_h2"></h2>
+
+        <hr>
+
+        <h1 class="text-warning">49. Click the button to show the math sqrt</h1>
+        <button onclick="mathSqrt()" type="button" class="btn btn-dark">Math Sqrt</button>
+        <h2 id="sqrt_h2"></h2>
+
+        <hr>
+
+        <h1 class="text">50. Click the button to show the math random</h1>
+        <button onclick="mathRandom()" type="button" class="btn btn-dark">Math Random</button>
+        <h2 id="ran_h2"></h2>
+
+        <hr>
+
+        <h1 class="text">51. Click the button to show the booleans</h1>
+        <button onclick="booleans()" type="button" class="btn btn-dark">Booleans</button>
+        <h2 id="bool_h2"></h2>
+
+        <hr>
+
+        <h1 class="text">51. Click the button to show the Ternary Operator</h1>
+        <input id="age" value="18" />
+        <button onclick="terOp()" type="button" class="btn btn-dark">Ternary</button>
+        <h2 id="ter_h2"></h2>
+
+
+
+
+
+    </div>
+
+
+    <!--scripts links-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
